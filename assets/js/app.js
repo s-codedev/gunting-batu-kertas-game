@@ -31,8 +31,12 @@ function win(player, computer) {
     result.innerHTML = `${choiceConvert(player)} vs ${choiceConvert(
 		computer,
 	)} | Kamu Menang`;
-    playerHand.src = `../assets/img/pemain${choiceConvert(player)}.png`;
-    computerHand.src = `../assets/img/komputer${choiceConvert(computer)}.png`;
+    playerHand.src = `../gunting-batu-kertas-game/assets/img/pemain${choiceConvert(
+		player,
+	)}.png`;
+    computerHand.src = `../gunting-batu-kertas-game/assets/img/komputer${choiceConvert(
+		computer,
+	)}.png`;
     playerChoices.classList.add('green');
     setTimeout(() => playerChoices.classList.remove('green'), 300);
 }
@@ -45,8 +49,12 @@ function lose(player, computer) {
     result.innerHTML = `${choiceConvert(player)} vs ${choiceConvert(
 		computer,
 	)} | Kamu Kalah`;
-    playerHand.src = `../assets/img/pemain${choiceConvert(player)}.png`;
-    computerHand.src = `../assets/img/komputer${choiceConvert(computer)}.png`;
+    playerHand.src = `../gunting-batu-kertas-game/assets/img/pemain${choiceConvert(
+		player,
+	)}.png`;
+    computerHand.src = `../gunting-batu-kertas-game/assets/img/komputer${choiceConvert(
+		computer,
+	)}.png`;
     playerChoices.classList.add('red');
     setTimeout(() => playerChoices.classList.remove('red'), 300);
 }
@@ -58,8 +66,12 @@ function draw(player, computer) {
     result.innerHTML = `${choiceConvert(player)} vs ${choiceConvert(
 		computer,
 	)} | Seri`;
-    playerHand.src = `../assets/img/pemain${choiceConvert(player)}.png`;
-    computerHand.src = `../assets/img/komputer${choiceConvert(computer)}.png`;
+    playerHand.src = `../gunting-batu-kertas-game/assets/img/pemain${choiceConvert(
+		player,
+	)}.png`;
+    computerHand.src = `../gunting-batu-kertas-game/assets/img/komputer${choiceConvert(
+		computer,
+	)}.png`;
     playerChoices.classList.add('gray');
     setTimeout(() => playerChoices.classList.remove('gray'), 300);
 }
